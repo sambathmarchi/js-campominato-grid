@@ -1,0 +1,55 @@
+:root {
+    --num-cells-per-row: 10;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+#grid{
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: calc(100% / var(--num-cells-per-row) );
+    height: calc(100% / var(--num-cells-per-row) );
+    border: 1px solid white;
+}
+.colorsqare{
+    background-color: red;
+}
+#button{
+    margin: 0 auto;
+    display: flex;  
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: crimson;
+    color: white;
+
+}
+.spazio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    margin: 0 auto;
+    text-align: center;
+}
+.main{
+    text-align: center;
+    padding-top: 10px;
+}
